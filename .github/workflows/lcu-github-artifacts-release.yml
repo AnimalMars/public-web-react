@@ -2,15 +2,15 @@ name: AnimalMars/public-web-react
 
 on:
   push:
-    branches: [main]
+    branches: [main,webContent]
   pull_request:
-    branches: [main]
+    branches: [main,webContent]
 
 permissions: write-all
 
 env:
   CI: false
-  Branches: main
+  Branches: main,webContent
   MainBranch: main
   NPMRegistry: https://registry.npmjs.org/
   InstallCommand: npm ci
